@@ -259,8 +259,8 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
     const groups = [];
 
     if (mode === "sentence") {
-      let traceN = num("traceRows", 2);
-      const blankN = num("blankRows", 1);
+      let traceN = num("traceRows", 1);
+      const blankN = num("blankRows", 0);
       if (!showModel && traceN === 0) traceN = 1; // 견본 OFF면 흐린 줄은 최소 1줄
       lines.forEach(line => {
         const chars = Array.from(line.trim());
@@ -307,7 +307,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
     const guides = $("guides").checked;
     const header = document.querySelector('input[name="head"]:checked').value === "on";
     $("titleField").hidden = !header;
-    const mx = Math.max(5, num("marginX", 15)), my = Math.max(5, num("marginY", 15));
+    const mx = Math.max(5, num("marginX", 5)), my = Math.max(5, num("marginY", 5));
     $("mxVal").textContent = mx + "mm";
     $("myVal").textContent = my + "mm";
 
