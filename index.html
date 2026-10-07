@@ -160,19 +160,19 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
     <div class="field">
       <span class="lbl">헤딩 영역 (제목·이름·날짜)</span>
       <div class="seg">
-        <input type="radio" name="head" id="head-on" value="on" checked><label for="head-on">표시</label>
-        <input type="radio" name="head" id="head-off" value="off"><label for="head-off">숨기기</label>
+        <input type="radio" name="head" id="head-on" value="on"><label for="head-on">표시</label>
+        <input type="radio" name="head" id="head-off" value="off" checked><label for="head-off">숨기기</label>
       </div>
     </div>
 
     <div class="row2">
       <div class="field">
         <label for="marginX">좌우 여백 <span id="mxVal"></span></label>
-        <input type="range" id="marginX" min="5" max="30" step="1" value="15">
+        <input type="range" id="marginX" min="5" max="30" step="1" value="5">
       </div>
       <div class="field">
         <label for="marginY">상하 여백 <span id="myVal"></span></label>
-        <input type="range" id="marginY" min="5" max="30" step="1" value="15">
+        <input type="range" id="marginY" min="5" max="30" step="1" value="5">
       </div>
     </div>
     <div class="hint">대부분의 프린터는 가장자리 4~5mm를 인쇄하지 못해서 최소 여백을 5mm로 두었습니다.</div>
@@ -202,11 +202,11 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
     <div class="row2" id="sentenceOpts">
       <div class="field">
         <label for="traceRows">흐린 줄 수</label>
-        <input type="number" id="traceRows" min="0" max="10" value="2">
+        <input type="number" id="traceRows" min="0" max="10" value="1">
       </div>
       <div class="field">
         <label for="blankRows">빈 줄 수</label>
-        <input type="number" id="blankRows" min="0" max="10" value="1">
+        <input type="number" id="blankRows" min="0" max="10" value="0">
       </div>
     </div>
 
